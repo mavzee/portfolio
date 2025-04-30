@@ -275,14 +275,13 @@ export default function laman() {
               <div className="project-card">
                 <div className="project-content">
                   <div className="project-stamp">作品</div>
-                  <h4 className="project-title">Task Management App</h4>
+                  <h4 className="project-title">Pokemon App</h4>
                   <p className="project-description">
-                    A collaborative task management application built with React and Firebase, featuring real-time data
-                    synchronization and user authentication.
+                  Pokémon Battle Arena is a sleek and interactive app where you can explore a dynamic Pokédex, build your ultimate team, and simulate thrilling Pokémon battles. Track stats, manage your team, and relive the classic strategy of Pokémon with a modern game-inspired interface.
                   </p>
                   <div className="project-links">
                     <a
-                      href="https://github.com/ivanguerrero/task-management-app"
+                      href="https://github.com/mavzee/pokemon"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
@@ -305,7 +304,7 @@ export default function laman() {
                       GitHub
                     </a>
                     <a
-                      href="https://task-app-demo.vercel.app"
+                      href="https://pokenard.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
@@ -335,14 +334,13 @@ export default function laman() {
               <div className="project-card">
                 <div className="project-content">
                   <div className="project-stamp">作品</div>
-                  <h4 className="project-title">Portfolio Website</h4>
+                  <h4 className="project-title">Sci Cal</h4>
                   <p className="project-description">
-                    A responsive portfolio website built for the Frontend Masters Challenge, featuring advanced CSS
-                    animations and React components.
+                  SciCal is a powerful and intuitive scientific calculator app designed for students, engineers, and professionals. Perform advanced mathematical functions with ease, including trigonometry, logarithms, exponentials, and memory operations—all in a sleek, user-friendly interface.
                   </p>
                   <div className="project-links">
                     <a
-                      href="https://github.com/ivanguerrero/portfolio-website"
+                      href="https://github.com/mavzee/scical"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
@@ -365,7 +363,7 @@ export default function laman() {
                       GitHub
                     </a>
                     <a
-                      href="https://ivan-portfolio.vercel.app"
+                      href="https://ivanard.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
