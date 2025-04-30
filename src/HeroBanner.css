@@ -1,0 +1,482 @@
+:root {
+  --vh: 1vh;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.hero-container {
+  background-color: #f9f3e9;
+  color: #333;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('https://www.transparenttextures.com/patterns/rice-paper.png');
+  box-sizing: border-box;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@supports (-webkit-touch-callout: none) {
+  .hero-container {
+    height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+  }
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.main-content {
+  flex: 1;
+  padding: 0 2rem;
+  animation: fadeInUp 1s ease-out;
+}
+
+.title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.title .en {
+  display: block;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #222;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: textGlow 3s infinite alternate;
+  line-height: 1.2;
+}
+
+.title .jp {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: #444;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.japanese-theme {
+  margin: 2rem auto;
+  max-width: 300px;
+  animation: fadeIn 2s ease-out;
+}
+
+.kanji {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: #8b0000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.kanji:hover {
+  transform: scale(1.05);
+}
+
+.translation {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.cta-button {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta-button span {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button:hover {
+  background-color: #6b0000;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:active {
+  transform: translateY(-1px);
+}
+
+.button-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.2) 50%, transparent 75%);
+  background-size: 400% 400%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover .button-decoration {
+  opacity: 1;
+  animation: shine 2s infinite;
+}
+
+.japanese-decoration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.japanese-decoration.left {
+  transform: translateX(-20px);
+}
+
+.japanese-decoration.right {
+  transform: translateX(20px);
+}
+
+.japanese-decoration .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #8b0000;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.japanese-decoration .circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px dashed #8b0000;
+  opacity: 0.5;
+}
+
+.japanese-decoration .line {
+  width: 2px;
+  height: 150px;
+  background: linear-gradient(to bottom, transparent, #8b0000, transparent);
+}
+
+.wave-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  animation: wave 10s infinite linear;
+}
+
+.torii-gate {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 200px;
+  background-color: #8b0000;
+  z-index: 1;
+  opacity: 0.1;
+}
+
+.torii-gate.left {
+  left: 5%;
+  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+}
+
+.torii-gate.right {
+  right: 5%;
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+}
+
+.floating-kanji {
+  position: absolute;
+  font-size: 8rem;
+  color: rgba(139, 0, 0, 0.05);
+  z-index: 0;
+  animation: float 15s infinite linear;
+  pointer-events: none;
+  user-select: none;
+}
+
+.floating-kanji:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.floating-kanji:nth-child(2) {
+  top: 60%;
+  right: 15%;
+  animation-delay: -5s;
+}
+
+.floating-kanji:nth-child(3) {
+  bottom: 20%;
+  left: 20%;
+  animation-delay: -10s;
+}
+
+.cherry-blossom {
+  position: absolute;
+  background-color: #ffb7c5;
+  border-radius: 50% 0 50% 50%;
+  transform: rotate(45deg);
+  top: -10px;
+  z-index: 1;
+  pointer-events: none;
+  animation: falling linear;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textGlow {
+  0% { text-shadow: 0 0 5px rgba(139, 0, 0, 0.3); }
+  100% { text-shadow: 0 0 15px rgba(139, 0, 0, 0.6); }
+}
+
+@keyframes shine {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
+@keyframes falling {
+  0% {
+    transform: translateY(0) rotate(0deg) rotateX(0deg) rotateY(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) rotateX(180deg) rotateY(360deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .torii-gate {
+    display: none;
+  }
+  
+  .floating-kanji {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  
+  .japanese-decoration {
+    flex-direction: row;
+    width: auto;
+    margin: 1rem 0;
+  }
+  
+  .japanese-decoration .line {
+    width: 100px;
+    height: 2px;
+    margin: 0 1rem;
+  }
+  
+  .title .en {
+    font-size: 3rem;
+  }
+  
+  .title .jp {
+    font-size: 1.4rem;
+  }
+  
+  .subtitle {
+    font-size: 1.6rem;
+  }
+  
+  .kanji {
+    font-size: 4rem;
+  }
+  
+  .floating-kanji {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title .en {
+    font-size: 2.2rem;
+  }
+  
+  .title .jp {
+    font-size: 1.1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .kanji {
+    font-size: 3rem;
+  }
+  
+  .cta-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+  
+  .floating-kanji {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .hero-container {
+    min-height: -webkit-fill-available;
+  }
+  
+  .hero-content {
+    padding: 1rem;
+  }
+  
+  .title .en {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-container {
+    height: auto;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+  }
+  
+  .hero-content {
+    padding: 1rem;
+    transform: scale(0.95);
+  }
+  
+  .japanese-decoration .line {
+    height: 80px;
+  }
+}
+
+@media (max-height: 600px) and (orientation: portrait) {
+  .hero-content {
+    transform: scale(0.9);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .japanese-decoration {
+    display: none;
+  }
+  
+  .kanji {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-height: 400px) and (orientation: landscape) {
+  .hero-content {
+    transform: scale(0.8);
+    padding: 0.5rem;
+  }
+  
+  .title .en {
+    font-size: 1.8rem;
+  }
+  
+  .kanji {
+    font-size: 2.5rem;
+  }
+  
+  .wave-divider svg {
+    height: 80px;
+  }
+}
