@@ -133,7 +133,7 @@ export default function laman() {
             <div className="social-links">
               {/* GitHub Icon */}
               <a
-                href="https://github.com/ivanguerrero"
+                href="https://github.com/mavzee"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
@@ -156,7 +156,7 @@ export default function laman() {
 
               {/* LinkedIn Icon */}
               <a
-                href="https://linkedin.com/in/ivanguerrero"
+                href="https://www.linkedin.com/in/ivan-guerrero-398469328/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"
@@ -179,7 +179,7 @@ export default function laman() {
               </a>
 
               {/* Mail Icon */}
-              <a href="mailto:ivan@example.com" className="social-link">
+              <a href="mailto:ivanguerrero042403@gmail.com" className="social-link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -539,7 +539,7 @@ export default function laman() {
               collaborate and build something amazing together.
             </p>
             <div className="button-group">
-              <a href="mailto:ivan@example.com" className="button button-primary">
+              <a href="mailto:ivanguerrero042403@.com" className="button button-primary">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -558,7 +558,7 @@ export default function laman() {
                 Email Me
               </a>
               <a
-                href="https://linkedin.com/in/ivanguerrero"
+                href="https://www.linkedin.com/in/ivan-guerrero-398469328/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button button-secondary"
