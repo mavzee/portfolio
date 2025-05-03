@@ -393,14 +393,13 @@ export default function laman() {
               <div className="project-card">
                 <div className="project-content">
                   <div className="project-stamp">作品</div>
-                  <h4 className="project-title">E-commerce UI</h4>
+                  <h4 className="project-title">Educational & Cultural Tour Blog</h4>
                   <p className="project-description">
-                    A modern e-commerce user interface built with Next.js and Tailwind CSS, featuring responsive design
-                    and product filtering.
+                  In one unforgettable week, we traveled across Luzon—uncovering the nation’s rich history, learning from its modern institutions, and experiencing its diverse culture firsthand. From the walled city of Intramuros to the cool heights of Baguio, each day gave us a new lens to view the Philippines with pride and curiosity.
                   </p>
                   <div className="project-links">
                     <a
-                      href="https://github.com/ivanguerrero/ecommerce-ui"
+                      href="https://github.com/mavzee/blog"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
@@ -423,7 +422,7 @@ export default function laman() {
                       GitHub
                     </a>
                     <a
-                      href="https://ecommerce-demo.vercel.app"
+                      href="https://blogniayban.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
@@ -578,6 +577,23 @@ export default function laman() {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
                 LinkedIn
+              </a>
+              <a
+                href="https://blogniayban.netlify.app/"  // or your actual blog path
+                className="button button-secondary"
+              >
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="16" 
+                  height="16" 
+                  fill="currentColor" 
+                  viewBox="0 0 16 16"
+                  style={{ marginRight: '8px' }}
+                >
+                  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                  <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                Blog
               </a>
             </div>
           </section>
