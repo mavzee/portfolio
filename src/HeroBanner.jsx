@@ -84,7 +84,7 @@ const HeroBanner = () => {
             <span className="en">Ivan Guerrero</span>
             <span className="jp">イヴァン・ゲレーロ</span>
           </h1>
-          <h2 className="subtitle">Web Developer</h2>
+          <h2 className="subtitle">Developer</h2>
           <div className="japanese-theme">
             <div className="kanji">開発者</div>
             <div className="translation">(Developer)</div>

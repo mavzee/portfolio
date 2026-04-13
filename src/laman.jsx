@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import "./App.css"
 
-export default function laman() {
+export default function Laman() {
   const [darkMode, setDarkMode] = useState(true) // Default to dark mode
   const [showSplash, setShowSplash] = useState(true)
 
@@ -197,6 +197,7 @@ export default function laman() {
               </a>
 
               {/* Resume Button */}
+              <a href="/resume.pdf" download>
               <button className="resume-button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -216,6 +217,7 @@ export default function laman() {
                 </svg>
                 Resume
               </button>
+            </a>
             </div>
           </header>
 
@@ -225,9 +227,10 @@ export default function laman() {
             </div>
             <h3 className="section-title">About</h3>
             <p className="section-text">
-              I'm a passionate front-end developer focused on building beautiful, responsive web experiences. With a
-              strong foundation in HTML, CSS, JavaScript, and React, I'm constantly learning new technologies to create
-              dynamic and user-friendly interfaces.
+              I work as an IT Specialist at Hyacinth Holding, 
+              where I apply my technical skills to support systems, 
+              improve workflows, and contribute to efficient digital solutions. 
+              Im continuously learning new technologies to expand my capabilities in both development and IT operations.
             </p>
             <div className="button-group">
               <a href="#contact" className="button button-secondary">
@@ -250,13 +253,12 @@ export default function laman() {
                 "CSS3",
                 "JavaScript (ES6+)",
                 "React.js",
-                "Redux",
-                "Next.js",
+                "Automation",
+                "App script",
                 "Responsive Design",
                 "UI/UX Design",
                 "Git & GitHub",
-                "REST APIs",
-                "GraphQL",
+                
               ].map((skill) => (
                 <span key={skill} className="skill-tag">
                   {skill}
@@ -452,10 +454,10 @@ export default function laman() {
               <div className="project-card">
                 <div className="project-content">
                   <div className="project-stamp">作品</div>
-                  <h4 className="project-title">Weather Dashboard</h4>
+                  <h4 className="project-title">Social Media Adolescent Addiction </h4>
                   <p className="project-description">
-                    A weather dashboard application that uses the OpenWeather API to display current weather conditions
-                    and forecasts.
+                    Complete the short-form complaint style questionnaire based on the court filing questions
+                    for Social Media Adolescent Addiction / Personal Injury.
                   </p>
                   <div className="project-links">
                     <a
@@ -482,7 +484,7 @@ export default function laman() {
                       GitHub
                     </a>
                     <a
-                      href="https://weather-app-demo.vercel.app"
+                      href="https://davidgrossmanandassociates.com/social-media-claim-form"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
